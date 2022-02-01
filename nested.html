@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel='stylesheet' href='style.css'>
+    <title>Nested</title>
 </head>
+
 <body>
-    <div id="nav">
-        <ul>
-            <li><a href=index.html>home</a></li>
-            <li><a href=nested.html>nested examples</a></li>
-            <li><a href=attributes.html>attribute examples</a></li>
-            <li><a href=tags.html>tag examples</a></li>
-            <li><a href=carson.html>Carson’s page</a></li>
-            <li><a href=derek.html>Derek’s page</a></li>
-            <li><a href=sean.html>Sean’s page</a></li>
-        </ul>
-    </div>
-<div>
-    outside div
+    <!-- Nav Bar -->
+    <ul class="nav">
+        <li><a href=index.html>Home</a></li>
+        <li><a href=nested.html class="active">Nested Examples</a></li>
+        <li><a href=attributes.html>Attribute Examples</a></li>
+        <li><a href=tags.html>Tag Examples</a></li>
+        <li><a href=carson.html>Carson’s Page</a></li>
+        <li><a href=derek.html>Derek’s Page</a></li>
+        <li><a href=sean.html>Sean’s Page</a></li>
+    </ul>
+
     <div>
-        inside div
-        <ul>
-            <li>1</li>
-            <li>2 with a <button>button</button></li>
-            <li>3</li>
-        </ul>
+        outside div
+        <div>
+            inside div
+            <ul>
+                <li>1</li>
+                <li>2 with a <button>button</button></li>
+                <li>3</li>
+            </ul>
+        </div>
     </div>
-</div>
 </body>
+
 </html>
