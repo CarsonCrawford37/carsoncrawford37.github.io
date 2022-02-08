@@ -4,6 +4,11 @@
 }
 
 /* Selectors */
+
+body {
+    font-family: "Comic Sans MS", "sans-serif";
+}
+
 ul.nav {
     list-style-type: none;
     margin: 0;
