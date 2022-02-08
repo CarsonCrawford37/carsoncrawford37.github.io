@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="waves.css">
     <title>Sean</title>
 </head>
 
@@ -19,28 +20,54 @@
         <li><a href=sean.html class="active">Sean’s Page</a></li>
     </ul>
     <div class="row">
-        <h1>Hello There</h1>
-        <img src="Images/sean.jpg" alt="me" width="300px">
+        <img src="Images/fish-sean.jpg" alt="me" width="600px">
     </div>
     <div class="row">
         <h2>My name is -tion</h2>
     </div>
     <div class="row">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ipsum mi, congue eget iaculis non,
-            scelerisque et enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Praesent a enim iaculis, vehicula velit vel, venenatis ligula. Quisque quis fringilla nunc. Orci
-            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc malesuada dolor
-            dolor, elementum sagittis lacus feugiat ut. Donec porta dapibus elementum. Morbi pretium auctor ex eu
-            semper. Mauris porttitor blandit cursus. Nulla malesuada blandit nulla non elementum.
+            The answer is fish.
         </p>
         <p>
-            Morbi viverra vel massa non pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Fusce auctor lectus eu diam ultrices, ac sollicitudin orci rutrum. Fusce porttitor
-            eros nec sapien tempor pellentesque. Proin varius augue ac gravida luctus. Sed nec massa enim. Etiam
-            lobortis pulvinar accumsan.
+            What is the answer?
         </p>
+        <label for="fish-question-fish">Fish</label>
+        <input type="radio" name="fish-question-radio" id="fish-question-fish">
+        <label for="fish-question-wrong">Wrong</label>
+        <input type="radio" name="fish-question-radio" id="fish-question-wrong">
     </div>
+
+
+
+    <!--Simple CSS Waves https://codepen.io/goodkatz/pen/LYPGxQz -->
+
+    <div class="waves-header">
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(57,147,221,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(13,59,102,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(57,147,221,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#3993DD" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    <!--Content starts-->
+    <div id="waves-credit">
+        <p>Waves By.Goodkatz | Free to use </p>
+    </div>
+    <!--Content ends-->
 </body>
 
 </html>
