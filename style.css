@@ -5,8 +5,13 @@
 
 /* Selectors */
 
-body {
+html {
     font-family: "Comic Sans MS", "sans-serif";
+    cursor: url("Images/cursors/RawFish.png") 10 8, auto;
+}
+
+a:hover, button:hover, input:hover {
+    cursor: url("Images/cursors/RawFishPointer.png") 26 0, auto;
 }
 
 ul.nav {

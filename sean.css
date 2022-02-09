@@ -1,0 +1,63 @@
+div.circle {
+    border-radius: 50%;
+    background-color: purple;
+    height: 50px;
+    width: 50px;
+}
+
+.changeSize {
+    animation-name: changeSize;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeSize {
+    0% {width: 50px; height: 50px;}
+    50% {width: 100px; height: 100px;}
+    110% {width: 50px; height: 50px;}
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid black;
+}
+
+.changeColor {
+    animation-name: changeColor;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+    0% {border-bottom-color: #04AA6D}
+    33% {border-bottom-color: steelblue}
+    66% {border-bottom-color: aqua}
+    100% {border-bottom-color: #04AA6D}
+}
+
+.crazyFish {
+    background-image: url("Images/Blue-Fish-PNG-Transparent-Image.png");
+    min-width: 94px;
+    height: 60px;
+    background-size: 94px;
+}
+
+.moveCircle {
+    animation-name: moveCircle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes moveCircle {
+    0% {left: 10%; top: 50%}
+    20% {left: 60%; top: 80%}
+    50% {left: 40%; top: 30%}
+    90% {left: 70%; top: 20%}
+    100% {left: 10%; top: 50%}
+}
