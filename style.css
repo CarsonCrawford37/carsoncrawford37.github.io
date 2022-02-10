@@ -19,7 +19,7 @@ ul.nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(13, 28, 46);
   }
   
   ul.nav li {
@@ -36,12 +36,12 @@ ul.nav {
   
   /* Change the link color to #111 (black) on hover */
   ul.nav li a:hover {
-    background-color: #111;
+    background-color: #204458;
   }
 
   /* Classes */
 .active{
-    background-color: #04AA6D;
+    background-color: #397ea7;
 }
 
 /* For mobile phones: */
