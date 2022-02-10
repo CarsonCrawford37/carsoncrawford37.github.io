@@ -86,3 +86,9 @@ img {
 .overflow {
     overflow-x:auto;
 }
+
+.title{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
