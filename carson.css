@@ -1,3 +1,13 @@
+hr{
+    width: 25%;
+    border-color:cadetblue;
+}
+
+img{
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
 #videoBackground {
     position: fixed;
     right: 0;
@@ -6,9 +16,20 @@
     min-height: 100%;
   }
 
-  .content {
+  #content {
     position: fixed;
     top: 0;
     width: 100%;
     padding: 20px;
+  }
+
+  #bodyContent{
+    background-color: rgba(70, 130, 180, 0.4);
+    margin-top: 1.5rem;
+    border-radius: 30px;
+  }
+
+  #bio{
+      text-align: center;
+      
   }
