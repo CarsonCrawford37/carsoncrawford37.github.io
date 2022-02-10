@@ -1,5 +1,8 @@
+*{
+  color:aliceblue;
+}
 hr{
-    width: 25%;
+    width: 95%;
     border-color:cadetblue;
 }
 

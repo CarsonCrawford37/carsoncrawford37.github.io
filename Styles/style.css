@@ -7,11 +7,12 @@
 
 html {
     font-family: "Comic Sans MS", "sans-serif";
-    cursor: url("Images/cursors/RawFish.png") 10 8, auto;
+    font-size: 1.3rem;
+    cursor: url("../Resources/cursors/RawFish.png") 10 8, auto;
 }
 
 a:hover, button:hover, input:hover {
-    cursor: url("Images/cursors/RawFishPointer.png") 26 0, auto;
+    cursor: url("../Resources/cursors/RawFishPointer.png") 26 0, auto;
 }
 
 ul.nav {
@@ -122,7 +123,7 @@ ol {
 }
 
 .colorBack{
-    background-image: url("Images/fishGif.gif");
+    background-image: url("../Resources/Images/fishGif.gif");
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: 100% 1400px;
@@ -132,4 +133,5 @@ ol {
     background-color: #204458c7;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    padding: 0.5rem;
 }

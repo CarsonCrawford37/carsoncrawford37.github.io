@@ -41,7 +41,7 @@ div.circle {
 }
 
 .crazyFish {
-    background-image: url("Images/Blue-Fish-PNG-Transparent-Image.png");
+    background-image: url("../Resources/Images/Blue-Fish-PNG-Transparent-Image.png");
     min-width: 94px;
     height: 60px;
     background-size: 94px;
