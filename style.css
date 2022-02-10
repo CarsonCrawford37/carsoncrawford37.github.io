@@ -92,3 +92,11 @@ img {
     margin: auto;
     padding: 30px;
 }
+
+.center{
+    text-align: center;
+    margin: auto;
+}
+.colorBack{
+    background-color: rgb(168, 238, 255);
+}

@@ -1,0 +1,56 @@
+.spiral {
+  margin: 0;
+  background: #5c70d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -100;
+}
+
+.outer-box {
+  width: 90vw;
+  height: 90vw;
+  background: #aa604a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  animation: spiral 5s ease-in-out -1s alternate infinite;
+}
+
+@keyframes spiral {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.box {
+  width: 82.5%;
+  height: 82.5%;
+  animation: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  transform: inherit;
+}
+
+.box-a {
+  background: #5c70d3;
+}
+
+.box-b {
+  background: #aa604a;
+}
+
+.contentFront{
+  position: relative;
+  z-index: 100;
+}
