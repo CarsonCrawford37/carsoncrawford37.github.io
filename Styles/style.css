@@ -124,9 +124,9 @@ ol {
 
 .colorBack{
     background-image: url("../Resources/Images/fishGif.gif");
+/*     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-size: 100% 1400px;
+ */    background-size: 100% 1400px;
 }
 
 .opaqueMain{
