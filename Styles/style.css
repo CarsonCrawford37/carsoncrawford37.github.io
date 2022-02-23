@@ -245,6 +245,7 @@ iframe#homepage {
 iframe#homepage {
     margin-top: 1.5rem;
     border-radius: 30px;
+    border-style: solid;
     border-width: 15px;
     border-color: antiquewhite;
   }
@@ -256,7 +257,15 @@ p#homepage {
 }
 
 img#profilePicture{
+    border-style: solid;
     border-radius: 70px;
-    border-width: 15px;
+    border-width: 10px;
     border-color: antiquewhite;
+}
+
+.crazyDiv{
+    border-width: 15px;
+    margin: auto;
+    width: 50%;
+    height: 200px;
 }
