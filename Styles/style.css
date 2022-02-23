@@ -236,3 +236,27 @@ ol {
     border-color: beige;
     border-style: solid;
 }
+
+iframe#homepage {
+    width: 60%;
+    height: 500px;
+}
+
+iframe#homepage {
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border-width: 15px;
+    border-color: antiquewhite;
+  }
+
+p#homepage {
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+img#profilePicture{
+    border-radius: 70px;
+    border-width: 15px;
+    border-color: antiquewhite;
+}
