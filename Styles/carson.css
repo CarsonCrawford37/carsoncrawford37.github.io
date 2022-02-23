@@ -1,43 +1,122 @@
-*{
-  color:aliceblue;
-}
-hr{
-    width: 95%;
-    border-color:#5f9ea0;
+* {
+  color: aliceblue;
 }
 
-img{
-    border-radius: 25px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+hr {
+  width: 95%;
+  border-color: #5f9ea0;
 }
 
-.titleOverride{
+h1{
+  font-size: 3rem;
+}
+
+img {
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 95px;
+}
+
+.titleOverride {
   border-radius: 0px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
+#C {
+  display: block;
+  float: left;
+  margin-right: 0 0 0 1em;
+  padding: 0;
+  animation: 3s ease-in-out infinite nameAni;
+}
+
+#a {
+  display: block;
+  float: left;
+  margin-right: 0 0 0 1em;
+  padding: 0;
+  animation: 3s ease-in-out 0.4s infinite nameAni;
+}
+
+#r {
+  display: block;
+  float: left;
+  margin-right: 0 0 0 1em;
+  padding: 0;
+  animation: 3s ease-in-out 0.8s infinite nameAni;
+}
+
+#s {
+  display: block;
+  float: left;
+  margin-right: 0 0 0 1em;
+  padding: 0;
+  animation: 3s ease-in-out 1.2s infinite nameAni;
+}
+
+#o {
+  display: block;
+  float: left;
+  margin-right: 0 0 0 1em;
+  padding: 0;
+  animation: 3s ease-in-out 1.6s infinite nameAni;
+}
+
+#n {
+  display: block;
+  float: left;
+  margin-right: 0 0 0 1em;
+  padding: 0;
+  animation: 3s ease-in-out 2s infinite nameAni;
+}
+
 #videoBackground {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#content {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 0;
+}
+
+#bodyContent {
+  background-color: rgba(70, 130, 180, 0.4);
+  margin-top: 1.5rem;
+  border-radius: 30px;
+}
+
+#bio {
+  text-align: center;
+
+}
+
+/* Keyframes */
+@keyframes nameAni {
+  00% {
+    transform: translateY(0em);
+    color: white;
   }
 
-  #content {
-    position: relative;
-    top: 0;
-    width: 100%;
-    padding: 0;
+  60% {
+    transform: translateY(-0.6em);
+    opacity: .2;
   }
 
-  #bodyContent{
-    background-color: rgba(70, 130, 180, 0.4);
-    margin-top: 1.5rem;
-    border-radius: 30px;
+  100% {
+    transform: translateY(0em);
+    color: white;
   }
 
-  #bio{
-      text-align: center;
-      
-  }
+}
