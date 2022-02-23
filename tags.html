@@ -22,12 +22,20 @@
         <!-- Nav Bar -->
         <ul class="nav">
             <li><a href=index.html>Home</a></li>
-            <li><a href=tags.html class="active">Tag Examples</a></li>
+            <li><a href=tags.html>Tag Examples</a></li>
             <li><a href=nested.html>Nested Examples</a></li>
             <li><a href=attributes.html>Attribute Examples</a></li>
-            <li><a href=carson.html>Carson’s Page</a></li>
-            <li><a href=derek.html>Derek’s Page</a></li>
-            <li><a href=sean.html>Sean’s Page</a></li>
+            <li><a href=styles.html class="active">Styles Page</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropA">The Killer Crew</a>
+                    <div class="dropdown-content">
+                        <a href=carson.html>Carson’s Page</a>
+                        <a href=derek.html>Derek’s Page</a>
+                        <a href=sean.html>Sean’s Page</a>
+                    </div>
+                </div>
+            </li>
         </ul>
 
         <div class="row opaqueMain center">
@@ -53,14 +61,14 @@
                 <h2>more words</h2>
             </div>
 
-            <br/>
+            <br />
 
             <div id="carson-tags">
                 <h3>This is a smaller header...</h3>
                 <p><small>with smaller font</small></p>
                 <form>
                     <label for="dropDown">How would you rate our page so far?</label>
-                    <br/>
+                    <br />
                     <select name="dropDown" id="rating">
                         <option>1</option>
                         <option>2</option>
@@ -68,15 +76,16 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <br/>
+                    <br />
                     <label for="slider">What about <em>now?</em></label>
                     <input type="range" name="slider">
                 </form>
-                <br/>
-                <iframe src="Resources/Videos/backgroundVideo.mp4" title="Video of lil fishies" height="auto" width="auto"></iframe>
+                <br />
+                <iframe src="Resources/Videos/backgroundVideo.mp4" title="Video of lil fishies" height="auto"
+                    width="auto"></iframe>
             </div>
 
-            <br/>
+            <br />
 
             <div id="derek-tags">
                 <hr />
@@ -84,8 +93,31 @@
                 <br />
                 <h2><i>this text is twisty</i></h2>
                 <!--Comment explaining the element below is an iframe-->
-                <h3><a href="https://www.youtube.com/watch?v=DMawWBwHnBU&list=LL&index=3">I sure hope this isn't a link</a></h3>
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=3131%20PA-690,%20Madison%20Township,%20PA%2018444&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embed google map in web page</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+                <h3><a href="https://www.youtube.com/watch?v=DMawWBwHnBU&list=LL&index=3">I sure hope this isn't a
+                        link</a></h3>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=3131%20PA-690,%20Madison%20Township,%20PA%2018444&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://putlocker-is.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 100%;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">embed google map in web page</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 100%;
+                            }
+                        </style>
+                    </div>
+                </div>
                 <h1><em>TABLE ALERT</em></h1>
                 <table style="margin: auto;">
                     <tr>
