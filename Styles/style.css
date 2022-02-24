@@ -8,11 +8,11 @@
 html {
     font-family: "Comic Sans MS", "sans-serif";
     font-size: 1.3rem;
-    cursor: url("../Resources/cursors/RawFish.png") 10 8, auto;
+    cursor: url("../Resources/cursors/RawFish-small.png") 10 8, auto;
 }
 
 a:hover, button:hover, input:hover {
-    cursor: url("../Resources/cursors/RawFishPointer.png") 26 0, auto;
+    cursor: url("../Resources/cursors/RawFishPointer-small.png") 26 0, auto;
 }
 
 ul.nav {
