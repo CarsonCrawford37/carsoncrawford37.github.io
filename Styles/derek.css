@@ -7,15 +7,6 @@ table, th, td {
     border: 1px solid white;
   }
 
-.shake {
-      display:inline-block;
-      display:block;
-      position:relative;
-  }
-  h1.shake,
-  .shake.inline {
-      display:inline-block
-  }
   @-webkit-keyframes spaceboots {
       0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
       10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
@@ -30,6 +21,9 @@ table, th, td {
       100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
   }
   .shake {
+    display:inline-block;
+    display:block;
+    position:relative;
       -webkit-animation-name: spaceboots;
       -webkit-animation-duration: 0.3s;
       -webkit-transform-origin:50% 50%;
