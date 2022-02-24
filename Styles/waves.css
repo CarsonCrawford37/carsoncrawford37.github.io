@@ -6,7 +6,7 @@
 }
 
 #waves-credit p {
-    color: #FFFFFF;
+    color: #3993DD;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     font-size:14px;
@@ -18,7 +18,8 @@
     left: 0;
     width: 100%;
     text-align:center;
-    color:white;
+    color:rgba(57,147,221,0.7);
+    z-index: -1;
 }
 .logo {
     width:50px;

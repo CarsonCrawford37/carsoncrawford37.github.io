@@ -1,20 +1,33 @@
+body {
+    background-color: rgba(57,147,221,0.7);
+}
+
+.rounded-corners {
+    border-radius: 33px;
+}
+
+.image-shadow {
+    box-shadow: 3px 3px 3px #00000033;
+}
+
 div.circle {
     border-radius: 50%;
     background-color: purple;
     height: 50px;
     width: 50px;
+    opacity: 0;
 }
 
 .changeSize {
     animation-name: changeSize;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes changeSize {
     0% {width: 50px; height: 50px;}
-    50% {width: 100px; height: 100px;}
+    50% {width: 75px; height: 75px;}
     110% {width: 50px; height: 50px;}
 }
 
@@ -37,7 +50,7 @@ div.circle {
     0% {border-bottom-color: #04AA6D}
     33% {border-bottom-color: steelblue}
     66% {border-bottom-color: aqua}
-    100% {border-bottom-color: #04AA6D}
+    75% {border-bottom-color: #04AA6D}
 }
 
 .crazyFish {
@@ -49,15 +62,22 @@ div.circle {
 
 .moveCircle {
     animation-name: moveCircle;
-    animation-duration: 2s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;
 }
 
 @keyframes moveCircle {
-    0% {left: 10%; top: 50%}
-    20% {left: 60%; top: 80%}
-    50% {left: 40%; top: 30%}
-    90% {left: 70%; top: 20%}
-    100% {left: 10%; top: 50%}
+    0% {left: 15%; top: 85%}
+    10% {left: 30%; top: 95%}
+    20% {left: 45%; top: 85%}
+    30% {left: 65%; top: 75%}
+    40% {left: 80%; top: 85%}
+    50% {left: 80%; top: 85%}
+    60% {left: 65%; top: 95%}
+    70% {left: 45%; top: 85%}
+    80% {left: 30%; top: 75%}
+    90% {left: 15%; top: 85%}
+    100% {left: 15%; top: 85%}
 }
