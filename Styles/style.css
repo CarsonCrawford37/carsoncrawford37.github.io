@@ -119,12 +119,15 @@ ul.nav li a:hover {
         float: left;
         display: block;
     }
+
     .hiddenOnMobile {
         display: inherit !important;
     }
+
     #hamburger-menu {
         display: none;
     }
+
     .dropdown-content {
         position: absolute;
         max-width: 350px;
@@ -272,7 +275,7 @@ iframe.homepage {
     border-style: solid;
     border-width: 15px;
     border-color: antiquewhite;
-  }
+}
 
 p.homepage {
     text-align: left;
@@ -280,16 +283,18 @@ p.homepage {
     margin-right: 40px;
 }
 
-img#profilePicture{
+img#profilePicture {
     border-style: solid;
     border-radius: 70px;
     border-width: 10px;
     border-color: antiquewhite;
 }
 
-.crazyDiv{
-    border-width: 15px;
-    margin: auto;
+#teamIntro hr {
     width: 50%;
-    height: 200px;
+    background-color: #2c97d1c7;
+    border-width: 3px;
+    border-radius: 35px;
+    border-color: #2c97d1c7;
+    border-style: solid;
 }
