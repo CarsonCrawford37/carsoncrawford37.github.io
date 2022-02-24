@@ -237,12 +237,12 @@ ol {
     border-style: solid;
 }
 
-iframe#homepage {
+iframe.homepage {
     width: 60%;
     height: 500px;
 }
 
-iframe#homepage {
+iframe.homepage {
     margin-top: 1.5rem;
     border-radius: 30px;
     border-style: solid;
@@ -250,7 +250,7 @@ iframe#homepage {
     border-color: antiquewhite;
   }
 
-p#homepage {
+p.homepage {
     text-align: left;
     margin-left: 40px;
     margin-right: 40px;
