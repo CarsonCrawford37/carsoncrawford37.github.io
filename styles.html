@@ -7,6 +7,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel='stylesheet' href='Styles/style.css'>
     <title>Styles Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="Resources/scripts/index.js"></script>
     <link rel="icon" href="Resources/Images/fishFavicon.png">
     <style>
         .big-text {
@@ -34,12 +36,13 @@
         </header>
 
         <ul class="nav">
-            <li><a href=index.html>Home</a></li>
-            <li><a href=tags.html>Tag Examples</a></li>
-            <li><a href=nested.html>Nested Examples</a></li>
-            <li><a href=attributes.html>Attribute Examples</a></li>
-            <li><a href=styles.html class="active">Styles Page</a></li>
-            <li>
+            <li id="hamburger-menu"><a href="#">Menu</a></li>
+            <li class="hiddenOnMobile"><a href=index.html>Home</a></li>
+            <li class="hiddenOnMobile"><a href=tags.html>Tag Examples</a></li>
+            <li class="hiddenOnMobile"><a href=nested.html>Nested Examples</a></li>
+            <li class="hiddenOnMobile"><a href=attributes.html>Attribute Examples</a></li>
+            <li class="hiddenOnMobile"><a href=styles.html class="active">Styles Page</a></li>
+            <li class="hiddenOnMobile">
                 <div class="dropdown">
                     <a class="dropA">The Killer Crew<i class="arrow-down"></i></a>
                     <div class="dropdown-content">
@@ -51,13 +54,13 @@
             </li>
         </ul>
         <div class="row opaqueMain center">
-            <br />
+                <br />
 
-        <div style="background-color: rgba(104, 5, 134, 0.7);">
-            <p style="color: white; font-size: 1.4em;">You see I placed an inline style in this div to change the background color in order help the viewer see our text better. I also changed this text's color and sizing using inline styling.</p>
-        </div>
+            <div style="background-color: rgba(104, 5, 134, 0.7);">
+                <p style="color: white; font-size: 1.4em;">You see I placed an inline style in this div to change the background color in order help the viewer see our text better. I also changed this text's color and sizing using inline styling.</p>
+            </div>
 
-        <div style="border-radius: 40px; border-style: solid; border-width: 10px; border-color: peru; background-color: blanchedalmond;" class="crazyDiv">
+            <div style="border-radius: 40px; border-style: solid; border-width: 10px; border-color: peru; background-color: blanchedalmond;" class="crazyDiv">
                 <p style="text-align: center; color: black; padding: 5px; font-size: 26px;">placeholder</p>
             </div>
 

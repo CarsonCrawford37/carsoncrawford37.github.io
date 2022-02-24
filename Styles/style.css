@@ -15,6 +15,10 @@ a:hover, button:hover, input:hover {
     cursor: url("../Resources/cursors/RawFishPointer-small.png") 26 0, auto;
 }
 
+#hamburger-menu {
+    width: 100% !important;
+}
+
 ul.nav {
     width: 100%;
     list-style-type: none;
@@ -25,8 +29,10 @@ ul.nav {
 }
 
 ul.nav li {
-    width: 16.6%;
-    float: left;
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
 }
 
 ul.nav li a {
@@ -62,10 +68,8 @@ ul.nav li a:hover {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: rgb(13, 28, 46);
-    max-width: 350px;
-    min-width: 15em;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -103,6 +107,35 @@ ul.nav li a:hover {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid white;
+}
+
+.hiddenOnMobile {
+    display: none !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    ul.nav li {
+        width: 16.6%;
+        float: left;
+        display: block;
+    }
+    .hiddenOnMobile {
+        display: inherit !important;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    .dropdown-content {
+        position: absolute;
+        max-width: 350px;
+        min-width: 10em;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .dropdown-content {
+        min-width: 15em;
+    }
 }
 
 /* For mobile phones: */
@@ -158,15 +191,6 @@ ul.nav li a:hover {
     }
 
     .col-12 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    ul.nav li {
-        display: block;
-        float: none;
-        text-align: center;
         width: 100%;
     }
 }
