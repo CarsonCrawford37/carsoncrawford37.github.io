@@ -1,6 +1,7 @@
 /** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
 * {
     box-sizing: border-box;
+    color: antiquewhite;
 }
 
 /* Selectors */
@@ -292,9 +293,17 @@ img#profilePicture {
 
 #teamIntro hr {
     width: 50%;
-    background-color: #2c97d1c7;
+    background-color: antiquewhite;
     border-width: 3px;
     border-radius: 35px;
-    border-color: #2c97d1c7;
+    border-color: antiquewhite;
     border-style: solid;
+}
+
+h1#grossFont{
+    font-family: 'Rock 3D', cursive;
+}
+
+h3,h4#grossFont{
+    font-family: 'Snowburst One', cursive;
 }
