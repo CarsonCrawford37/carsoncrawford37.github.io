@@ -11,7 +11,7 @@
     <script src="Resources/scripts/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./Styles/style.css"> -->
+    <link rel="stylesheet" href="./Styles/style.css">
     <link rel="icon" href="Resources/Images/fishFavicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,112 +20,122 @@
 
 <body>
     <div>
-
         <header>
-            <img src="Resources/Images/title.gif" alt="title" class="title">
+            <div class="text-center">
+                <img class="rounded mx-auto d-block" src="Resources/Images/title.gif" alt="title" class="title">
+            </div>
         </header>
 
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Random</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Game</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-expanded="false">
-                            The Killer Team
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="carson.html">Carson Crawford</a>
-                            <a class="dropdown-item" href="derek.html">Derek Pyatt</a>
-                            <a class="dropdown-item" href="sean.html">Sean McKenzie</a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="container">
+                <a class="navbar-brand container" href="#">The Killer Fish</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end container" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item active mx-4">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="random.html">Random</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="game.html">Game</a>
+                        </li>
+                        <li class="nav-item dropdown mx-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                The Killer Team
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="carson.html">Carson Crawford</a>
+                                <a class="dropdown-item" href="derek.html">Derek Pyatt</a>
+                                <a class="dropdown-item" href="sean.html">Sean McKenzie</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <div class="row opaqueMain center">
-
-
-            <div class="introduction">
-                <!--<img src="Resources/Images/homepageGif.gif" alt="title" class="title">-->
-                <!-- <h1 id="grossFont">Live an adventure worthy of legend - Killer Fish</h1>
+        <div class="container bg-dark px-5">
+            <div class="row">
+                <img src="Resources/Images/homepageGif.gif" alt="title" class="title">
+                <h1 id="grossFont">Live an adventure worthy of legend - Killer Fish</h1>
                 <h3 id="grossFont">Check out our interactive games and videos while slaying our fire-breathing mafia
-                    boss; high-five yourself after winning our 12+ outdoor games or following North Carolina- born Santa
-                    up in his sleigh.</h2> -->
+                    boss; high-five yourself after winning our 12+ outdoor games or following North Carolina- born
+                    Santa
+                    up in his sleigh.</h3>
             </div>
 
-            <!-- <iframe class="homepage" src="https://www.youtube.com/embed/lFLyfRKsMaU" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe> -->
+            <div class="row text-center">
+                <iframe class="homepage mx-auto d-block" src="https://www.youtube.com/embed/lFLyfRKsMaU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
-            <!-- <div class="introduction">
+            <div class="row introduction mt-4">
                 <br />
-                <h4 id="grossFont">We're quite mad you know</h3>
-                    <p class="homepage">
-                        Want to track the progress of your killer killfish? Download one of our killer fish-approved
-                        font packs and get your band started. Being the Antichrist hath never been this easy!
-                    </p>
-                    <h4 id="grossFont">So yeah stay tuned for some new cool stuff that's coming</h3>
-                        <p class="homepage">
-                            Does it bother you that we do not comply with FCC guidelines? Why not stay updated on live
-                            Santa tracking then? And for all future apocalyptic threats, why not subscribe for free
-                            Robux Generator offers?
-                        </p>
+                <h4 id="grossFont">We're quite mad you know</h4>
+                <p class="homepage">
+                    Want to track the progress of your killer killfish? Download one of our killer fish-approved
+                    font packs and get your band started. Being the Antichrist hath never been this easy!
+                </p>
+                <h4 id="grossFont">So yeah stay tuned for some new cool stuff that's coming</h4>
+                <p class="homepage">
+                    Does it bother you that we do not comply with FCC guidelines? Why not stay updated on
+                    live
+                    Santa tracking then? And for all future apocalyptic threats, why not subscribe for free
+                    Robux Generator offers?
+                </p>
             </div>
             <br />
             <hr />
             <br />
             <div id="teamIntro">
-                <div class="row">
-                    <h1 id="grossFont">Meet Our Team</h1>
-                    <hr />
+                <div class="row text-center">
+                    <h1 id="grossFont" class="mx-auto d-block">Meet Our Team</h1>
                 </div>
+                <hr />
                 <div class="row">
-                    <div class="col-4"><a href=derek.html><img src="Resources/Images/derekFishCropped.jpg"
-                                height="300px" alt="profile picture" id="profilePicture"></a></div>
-                    <div class="col-8">
+                    <div class="col"><a href=derek.html><img src="Resources/Images/derekFishCropped.jpg" height="300px"
+                                alt="profile picture" id="profilePicture"></a></div>
+                    <div class="col">
                         <h2 class="name">Derek Pyatt</h2>
                         <p>
-                            Derek Pyatt is a world-renowned Astrophysicist that has many otherworldly discoveries under
+                            Derek Pyatt is a world-renowned Astrophysicist that has many otherworldly discoveries
+                            under
                             his belt including the discovery of the moon and the invention of Jupiter.
                             Pyatt also ventured into business starting his own company called "CVS Pharmacy" in 1963
                             after
                             his syntheses of the now widely used drug called "Benadryl".
                             Pyatt is also known for his impressive acting career that started with his lead role as
-                            Batman in the Christian Bale trilogy all the way to becoming an extra on the second Pacific
+                            Batman in the Christian Bale trilogy all the way to becoming an extra on the second
+                            Pacific
                             Rim film.
-                            Pyatt's not done yet though, he plans to be the first human to every consume over 12 hotdogs
+                            Pyatt's not done yet though, he plans to be the first human to every consume over 12
+                            hotdogs
                             in one sitting.
                         </p>
                     </div>
                 </div>
+                <br>
                 <div class="row">
-                    <div class="col-4"><a href=carson.html><img src="Resources/Images/FishHeadshot.png"
+                    <div class="col"><a href=carson.html><img src="Resources/Images/FishHeadshot.png"
                                 alt="profile picture" id="profilePicture"></a></div>
-                    <div class="col-8">
+                    <div class="col">
                         <h2 class="name">Carson Crawford</h2>
                         <p>
                             Carson Crawford is well known for his previously worked positions with many different
                             companies
                             in the past. From game
-                            design to social media to leadership positions, he has experience in these areas. He knows
+                            design to social media to leadership positions, he has experience in these areas. He
+                            knows
                             what he's doing. Some of
                             Carson's major achievements throughout his career include but not limited to: being the
                             Commander in Chief for the
@@ -135,18 +145,21 @@
                             downhill since then, he has turned to his lifelong passion: interpretive dance! </p>
                     </div>
                 </div>
+                <br>
                 <div class="row">
-                    <div class="col-4"><a href=sean.html><img src="Resources/Images/fish-sean.jpg" alt="profile picture"
+                    <div class="col"><a href=sean.html><img src="Resources/Images/fish-sean.jpg" alt="profile picture"
                                 id="profilePicture"></a></div>
-                    <div class="col-8">
+                    <div class="col">
                         <h2 class="name">Sean McKenzie</h2>
                         <p>
                             Sean McKenzie is the president of LawToys Inc., an umbrella company that designs,
-                            manufactures, and sells "innovative, high quality, and most advanced video game systems."
+                            manufactures, and sells "innovative, high quality, and most advanced video game
+                            systems."
 
                             He has been called "the current Father of the PC platform for kids".
 
-                            Due to the seriousness of many of his games, the company employs security guards for when
+                            Due to the seriousness of many of his games, the company employs security guards for
+                            when
                             the games are played in public.
 
                             McKenzie also published "Video Games", a 2003 book about video games, some of which are
@@ -160,12 +173,11 @@
                         </p>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
         </div>
 
     </div>
-    <div class="col-1"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
