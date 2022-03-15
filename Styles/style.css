@@ -1,6 +1,6 @@
 /** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     color: antiquewhite;
 }
 
@@ -47,67 +47,6 @@ ul.nav li a {
 /* Change the link color to #111 (black) on hover */
 ul.nav li a:hover {
     background-color: #204458;
-}
-
-.dropA .dropdown {
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    /* Important for vertical align on mobile phones */
-    margin: 0;
-    /* Important for vertical align on mobile phones */
-}
-
-.dropdown {
-    text-align: center;
-    overflow: hidden;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: relative;
-    background-color: rgb(13, 28, 46);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropA {
-    background-color: #204458;
-}
-
-.arrow-down {
-    float: right;
-    transform: translate(-20px, 12px);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid white;
 }
 
 .hiddenOnMobile {
@@ -225,8 +164,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    padding: 30px;
+    width: 70%;
 }
 
 .center {
