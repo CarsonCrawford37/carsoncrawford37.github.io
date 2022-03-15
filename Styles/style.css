@@ -245,3 +245,14 @@ h1#grossFont{
 h3,h4#grossFont{
     font-family: 'Snowburst One', cursive;
 }
+
+body#minion{
+    background-image: url("https://thumbs.gfycat.com/SnarlingCreativeEnglishsetter-size_restricted.gif");
+}
+
+#bodyContent {
+    /* background-color: rgba(70, 130, 180, 0.4); */
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    height: auto;
+  }
