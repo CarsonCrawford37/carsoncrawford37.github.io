@@ -161,9 +161,9 @@ img {
 }
 
 .title {
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     width: 70%;
 }
 
@@ -255,4 +255,8 @@ body#minion{
     margin-top: 1.5rem;
     border-radius: 30px;
     height: auto;
+  }
+
+  .navbar-brand{
+      margin-right: 0;
   }
