@@ -1,54 +1,57 @@
  const RAD = Math.PI/180;
  const scrn = document.getElementById('canvas');
  const sctx = scrn.getContext("2d");
+
  scrn.tabIndex = 1;
- scrn.addEventListener("click",()=>{
-    switch (state.curr) {
-        case state.getReady :
-            state.curr = state.Play;
-            SFX.start.play();
-            break;
-        case state.Play :
-            bird.flap();
-            break;
-        case state.gameOver :
-            state.curr = state.getReady;
-            bird.speed = 0;
-            bird.y = 100;
-            pipe.pipes=[];
-            UI.score.curr = 0;
-            SFX.played=false;
-            break;
-    }
- })
 
  scrn.onkeydown = function keyDown(e) {
- 	if (e.keyCode == 32 || e.keyCode == 87 || e.keyCode == 38)   // Space Key or W key or arrow up
- 	{
- 		switch (state.curr) {
-	        case state.getReady :
-	            state.curr = state.Play;
-	            SFX.start.play();
-	            break;
-	        case state.Play :
-	            bird.flap();
-	            break;
-	        case state.gameOver :
-	            state.curr = state.getReady;
-	            bird.speed = 0;
-	            bird.y = 100;
-	            pipe.pipes=[];
-	            UI.score.curr = 0;
-	            SFX.played=false;
-	            break;
-   		}
- 	}
-}
+     if (e.code === 'KeyW' || e.code === 'Space' || e.code === 'ArrowUp') {
+         switch (state.curr) {
+             case state.getReady :
+                 keyPressed = true;
+                 state.curr = state.Play;
+                 SFX.start.play();
+                 break;
+             case state.Play :
+                 keyPressed = true;
+                 break;
+             case state.gameOver :
+                 keyPressed = false;
+                 if (retry) {
+                     santa.animations.pop();
+                     santa.speed = 0;
+                     pipe.pipes=[];
+                     santa.y = 100;
+                     UI.score.curr = 0;
+                     SFX.played=false;
+                     state.curr = state.getReady;
+                     gameOver = false;
+                     retry = false;
+                 }
+                 break;
+         }
+     }
+ }
 
+ scrn.onkeyup = function keyUp(e) {
+     if (e.code === 'KeyW' || e.code === 'Space' || e.code === 'ArrowUp') {
+         keyPressed = false;
+         switch (state.curr) {
+             case state.gameOver :
+                 retry = true;
+                 break;
+         }
+     }
+ }
+
+ let keyPressed = false;
+ let gameOver = false;
+ let retry = false;
 
 
  let frames = 0;
- let dx = 2;
+ let dx = 4;
+ const spawnInterval = 80;
  const state = {
      curr : 0,
      getReady : 0,
@@ -73,7 +76,7 @@
         sctx.drawImage(this.sprite,this.x,this.y);
      },
      update : function() {
-        if(state.curr != state.Play) return;
+        if(state.curr !== state.Play) return;
         this.x -= dx;
         this.x = this.x % (this.sprite.width/2);    
     }
@@ -90,20 +93,20 @@
  const pipe = {
      top : {sprite : new Image()},
      bot : {sprite : new Image()},
-     gap:85,
+     gap:105,
      moved: true,
      pipes : [],
      draw : function(){
         for(let i = 0;i<this.pipes.length;i++)
         {
             let p = this.pipes[i];
-            sctx.drawImage(this.top.sprite,p.x,p.y)
-            sctx.drawImage(this.bot.sprite,p.x,p.y+parseFloat(this.top.sprite.height)+this.gap)
+            sctx.drawImage(this.top.sprite,p.x,p.y,26,400)
+            sctx.drawImage(this.bot.sprite,p.x,p.y+parseFloat(this.top.sprite.height)+this.gap,26,400)
         }
      },
      update : function(){
-         if(state.curr!=state.Play) return;
-         if(frames%100==0)
+         if(state.curr!==state.Play) return;
+         if(frames%spawnInterval===0)
          {
              this.pipes.push({x:parseFloat(scrn.width),y:-210*Math.min(Math.random()+1,1.8)});
          }
@@ -120,20 +123,17 @@
      }
 
  };
- const bird = {
+ const santa = {
     animations :
         [
-            {sprite : new Image()},
-            {sprite : new Image()},
-            {sprite : new Image()},
             {sprite : new Image()},
         ],
     rotatation : 0,
     x : 50,
     y :100,
     speed : 0,
-    gravity : .125,
-    thrust : 3.6,
+    gravity : .085,
+    thrust : 2.0,
     frame:0,
     draw : function() {
         let h = this.animations[this.frame].sprite.height;
@@ -145,15 +145,15 @@
         sctx.restore();
     },
     update : function() {
-        let r = parseFloat( this.animations[0].sprite.width)/2;
+        let r = parseFloat( this.animations[0].sprite.height)/2;
         switch (state.curr) {
             case state.getReady :
                 this.rotatation = 0;
-                this.y +=(frames%10==0) ? Math.sin(frames*RAD) :0;
-                this.frame += (frames%10==0) ? 1 : 0;
+                this.y +=(frames%10===0) ? Math.sin(frames*RAD) :0;
+                this.frame += (frames%10===0) ? 1 : 0;
                 break;
             case state.Play :
-                this.frame += (frames%5==0) ? 1 : 0;
+                this.frame += (frames%5===0) ? 1 : 0;
                 this.y += this.speed;
                 this.setRotation()
                 this.speed += this.gravity;
@@ -163,8 +163,11 @@
                 }
                 
                 break;
-            case state.gameOver : 
+            case state.gameOver :
+                this.animations[1] = {sprite: new Image()};
+                santa.animations[1].sprite.src="Resources/Images/santa/s1.png";
                 this.frame = 1;
+                r = parseFloat( this.animations[1].sprite.height)/2;
                 if(this.y + r  < gnd.y) {
                     this.y += this.speed;
                     this.setRotation()
@@ -173,32 +176,30 @@
                 else {
                 this.speed = 0;
                 this.y=gnd.y-r;
-                this.rotatation=90;
+                this.rotatation=0;
                 if(!SFX.played) {
-                    SFX.die.play();
+                    // SFX.die.play();
                     SFX.played = true;
                 }
                 }
-                
                 break;
         }
         this.frame = this.frame%this.animations.length;       
     },
     flap : function(){
-        if(this.y > 0)
+        if(this.y > 0 && !gameOver)
         {
-            SFX.flap.play();
+            // SFX.flap.play();
             this.speed = -this.thrust;
         }
     },
     setRotation : function(){
         if(this.speed <= 0)
         {
-            
-            this.rotatation = Math.max(-25, -25 * this.speed/(-1*this.thrust));
+            this.rotatation = Math.max(-45, -45 * this.speed/(-1*this.thrust));
         }
         else if(this.speed > 0 ) {
-            this.rotatation = Math.min(90, 90 * this.speed/(this.thrust*2));
+            this.rotatation = Math.min(55, 55 * this.speed/(this.thrust*2));
         }
     },
     collisioned : function(){
@@ -227,8 +228,6 @@
                 SFX.score.play();
                 pipe.moved = false;
             }
-
-            
                 
         }
     }
@@ -236,8 +235,6 @@
  const UI = {
     getReady : {sprite : new Image()},
     gameOver : {sprite : new Image()},
-    tap : [{sprite : new Image()},
-           {sprite : new Image()}],
     score : {
         curr : 0,
         best : 0,
@@ -252,18 +249,12 @@
             case state.getReady :
                 this.y = parseFloat(scrn.height-this.getReady.sprite.height)/2;
                 this.x = parseFloat(scrn.width-this.getReady.sprite.width)/2;
-                this.tx = parseFloat(scrn.width - this.tap[0].sprite.width)/2;
-                this.ty = this.y + this.getReady.sprite.height- this.tap[0].sprite.height;
                 sctx.drawImage(this.getReady.sprite,this.x,this.y);
-                sctx.drawImage(this.tap[this.frame].sprite,this.tx,this.ty)
                 break;
             case state.gameOver :
                 this.y = parseFloat(scrn.height-this.gameOver.sprite.height)/2;
                 this.x = parseFloat(scrn.width-this.gameOver.sprite.width)/2;
-                this.tx = parseFloat(scrn.width - this.tap[0].sprite.width)/2;
-                this.ty = this.y + this.gameOver.sprite.height- this.tap[0].sprite.height;
                 sctx.drawImage(this.gameOver.sprite,this.x,this.y);
-                sctx.drawImage(this.tap[this.frame].sprite,this.tx,this.ty)
                 break;
         }
         this.drawScore();
@@ -286,8 +277,8 @@
                         this.score.best = Math.max(this.score.curr,localStorage.getItem("best"));
                         localStorage.setItem("best",this.score.best);
                         let bs = `BEST  :     ${this.score.best}`;
-                        sctx.fillText(sc,scrn.width/2-80,scrn.height/2+0);
-                        sctx.strokeText(sc,scrn.width/2-80,scrn.height/2+0);
+                        sctx.fillText(sc,scrn.width/2-80,scrn.height / 2);
+                        sctx.strokeText(sc,scrn.width/2-80,scrn.height / 2);
                         sctx.fillText(bs,scrn.width/2-80,scrn.height/2+30);
                         sctx.strokeText(bs,scrn.width/2-80,scrn.height/2+30);
                     }
@@ -300,58 +291,61 @@
         }
     },
     update : function() {
-        if(state.curr == state.Play) return;
-        this.frame += (frames % 10==0) ? 1 :0;
-        this.frame = this.frame % this.tap.length;
+        if(state.curr === state.Play) return;
+        this.frame += (frames % 10===0) ? 1 :0;
     }
 
  };
 
-gnd.sprite.src="Resources/Images/ground.png";
-bg.sprite.src="Resources/Images/BG.png";
-pipe.top.sprite.src="Resources/Images/toppipe.png";
-pipe.bot.sprite.src="Resources/Images/botpipe.png";
+gnd.sprite.src="Resources/Images/snowyground.png";
+bg.sprite.src="Resources/Images/BGnight.png";
+pipe.top.sprite.src="Resources/Images/candycanetop.png";
+pipe.bot.sprite.src="Resources/Images/candycanebot.png";
 UI.gameOver.sprite.src="Resources/Images/go.png";
 UI.getReady.sprite.src="Resources/Images/getready.png";
-UI.tap[0].sprite.src="Resources/Images/tap/t0.png";
-UI.tap[1].sprite.src="Resources/Images/tap/t1.png";
-bird.animations[0].sprite.src="Resources/Images/bird/b0.png";
-bird.animations[1].sprite.src="Resources/Images/bird/b1.png";
-bird.animations[2].sprite.src="Resources/Images/bird/b2.png";
-bird.animations[3].sprite.src="Resources/Images/bird/b0.png";
+santa.animations[0].sprite.src="Resources/Images/santa/s0.png";
 SFX.start.src = "Resources/sfx/start.wav"
 SFX.flap.src = "Resources/sfx/flap.wav"
 SFX.score.src = "Resources/sfx/score.wav"
-SFX.hit.src = "Resources/sfx/hit.wav"
+SFX.hit.src = "Resources/sfx/oof.wav"
 SFX.die.src = "Resources/sfx/die.wav"
 
 gameLoop();
 
  function gameLoop()
  {
+     getInput();
      update();
      draw();
      frames++;
      requestAnimationFrame(gameLoop);
  }
 
+ function getInput() {
+     if (keyPressed) {
+         santa.flap();
+     }
+ }
+
  function update()
  {
-
-  bird.update();  
-  gnd.update();
-  pipe.update();
-  UI.update();
+    kd.tick();
+    santa.update();
+    gnd.update();
+    pipe.update();
+    UI.update();
  }
  function draw()
  {
-    sctx.fillStyle = "#30c0df";
+    sctx.fillStyle = "#0e203b";
     sctx.fillRect(0,0,scrn.width,scrn.height)
     bg.draw();
     pipe.draw();
-    
-    bird.draw();
+
+    santa.draw();
     gnd.draw();
     UI.draw();
  }
 
+
+ /* game adapted from https://github.com/aaarafat/JS-Flappy-Bird */
