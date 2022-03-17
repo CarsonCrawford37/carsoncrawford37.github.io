@@ -1,86 +1,9 @@
 /** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
 * {
-    /* box-sizing: border-box; */
     color: antiquewhite;
 }
 
-/* Selectors */
-  
-html {
-    font-family: "Comic Sans MS", "sans-serif";
-    font-size: 1.3rem;
-    cursor: url("../Resources/cursors/RawFish-small.png") 2 2, auto;
-}
-
-a:hover, button:hover, input:hover {
-    cursor: url("../Resources/cursors/RawFishPointer-small.png") 8 2, auto;
-}
-
-#hamburger-menu {
-    width: 100% !important;
-}
-
-ul.nav {
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(13, 28, 46);
-}
-
-ul.nav li {
-    display: block;
-    float: none;
-    text-align: center;
-    width: 100%;
-}
-
-ul.nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-ul.nav li a:hover {
-    background-color: #204458;
-}
-
-.hiddenOnMobile {
-    display: none !important;
-}
-
-@media only screen and (min-width: 1024px) {
-    ul.nav li {
-        width: 16.6%;
-        float: left;
-        display: block;
-    }
-
-    .hiddenOnMobile {
-        display: inherit !important;
-    }
-
-    #hamburger-menu {
-        display: none;
-    }
-
-    .dropdown-content {
-        position: absolute;
-        max-width: 350px;
-        min-width: 10em;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    .dropdown-content {
-        min-width: 15em;
-    }
-}
-
+/* Responsive Start */
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -160,6 +83,28 @@ img {
     overflow-x: auto;
 }
 
+/* Responsive End */
+
+/* Selectors Start */
+
+html {
+    font-family: "Comic Sans MS", "sans-serif";
+    font-size: 1.3rem;
+    cursor: url("../Resources/cursors/RawFish-small.png") 2 2, auto;
+}
+
+a:hover, button:hover, input:hover {
+    cursor: url("../Resources/cursors/RawFishPointer-small.png") 8 2, auto;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Selectors End*/
+
+/* Classes Start */
 .title {
     /* display: block;
     margin-left: auto;
@@ -171,36 +116,6 @@ img {
     text-align: center;
     margin: auto;
     color: white;
-}
-
-ul {
-    text-align: center;
-    list-style-position: inside;
-}
-
-ol {
-    text-align: center;
-    list-style-position: inside;
-}
-
-.colorBack {
-    background-image: url("../Resources/Images/fishGif.gif");
-    /*     background-repeat: no-repeat;
-    background-repeat: no-repeat;
- */
-    background-size: 100% 1400px;
-}
-
-.opaqueMain {
-    background-color: #204458c7;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding: 0.5rem;
-}
-
-.obiswan {
-    border-color: beige;
-    border-style: solid;
 }
 
 iframe.homepage {
@@ -222,6 +137,14 @@ p.homepage {
     margin-right: 40px;
 }
 
+.navbar-brand {
+    margin-right: 0;
+}
+
+/* Classes End */
+
+/* IDs Start */
+
 img#profilePicture {
     border-style: solid;
     border-radius: 70px;
@@ -238,15 +161,15 @@ img#profilePicture {
     border-style: solid;
 }
 
-h1#grossFont{
+h1#grossFont {
     font-family: 'Rock 3D', cursive;
 }
 
-h3,h4#grossFont{
+h3, h4#grossFont {
     font-family: 'Snowburst One', cursive;
 }
 
-body#minion{
+body#minion {
     background-image: url("https://thumbs.gfycat.com/SnarlingCreativeEnglishsetter-size_restricted.gif");
 }
 
@@ -255,8 +178,6 @@ body#minion{
     margin-top: 1.5rem;
     border-radius: 30px;
     height: auto;
-  }
+}
 
-  .navbar-brand{
-      margin-right: 0;
-  }
+/* IDs End */
