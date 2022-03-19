@@ -159,6 +159,15 @@ p.homepage {
     border-color: antiquewhite;
 }
 
+.footerHr{
+    width: 80%;
+    background-color: antiquewhite;
+    border-width: 3px;
+    border-radius: 35px;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
 /* Classes End */
 
 /* IDs Start */
