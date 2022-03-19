@@ -119,7 +119,7 @@ ul {
 }
 
 iframe.homepage {
-    width: 60%;
+    width: 70%;
     height: 500px;
 }
 
@@ -139,6 +139,24 @@ p.homepage {
 
 .navbar-brand {
     margin-right: 0;
+}
+
+.santaFrame{
+    width: 84%;
+    height: 500px;
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: antiquewhite;
+}
+
+.santaGame{
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: antiquewhite;
 }
 
 /* Classes End */
@@ -162,11 +180,13 @@ img#profilePicture {
 }
 
 h1#grossFont {
-    font-family: 'Rock 3D', cursive;
+    font-family: 'Snowburst One', cursive;
+    text-align: center;
 }
 
 h3, h4#grossFont {
     font-family: 'Snowburst One', cursive;
+    text-align: center;
 }
 
 body#minion {
