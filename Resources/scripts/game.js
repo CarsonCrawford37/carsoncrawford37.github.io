@@ -6,6 +6,7 @@
 
  scrn.onkeydown = function keyDown(e) {
      if (e.code === 'KeyW' || e.code === 'Space' || e.code === 'ArrowUp') {
+         e.preventDefault();
          switch (state.curr) {
              case state.getReady :
                  keyPressed = true;
