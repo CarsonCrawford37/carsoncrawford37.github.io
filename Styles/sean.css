@@ -69,15 +69,15 @@ div.circle {
 }
 
 @keyframes moveCircle {
-    0% {left: 15%; top: 85%}
-    10% {left: 30%; top: 95%}
-    20% {left: 45%; top: 85%}
-    30% {left: 65%; top: 75%}
-    40% {left: 80%; top: 85%}
-    50% {left: 80%; top: 85%}
-    60% {left: 65%; top: 95%}
-    70% {left: 45%; top: 85%}
-    80% {left: 30%; top: 75%}
-    90% {left: 15%; top: 85%}
-    100% {left: 15%; top: 85%}
+    0% {left: 15%; top: 75%}
+    10% {left: 30%; top: 85%}
+    20% {left: 45%; top: 75%}
+    30% {left: 65%; top: 65%}
+    40% {left: 80%; top: 75%}
+    50% {left: 80%; top: 75%}
+    60% {left: 65%; top: 85%}
+    70% {left: 45%; top: 75%}
+    80% {left: 30%; top: 65%}
+    90% {left: 15%; top: 75%}
+    100% {left: 15%; top: 75%}
 }
