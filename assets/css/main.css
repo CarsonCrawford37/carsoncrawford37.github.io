@@ -3531,6 +3531,10 @@ body.is-menu-visible #menu .inner {
 	width: 55em;
 }
 
+#banner .image{
+
+}
+
 #banner .logo {
 	-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 	-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
@@ -3634,10 +3638,19 @@ body.is-menu-visible #menu .inner {
 
 }
 
+@media screen and (max-width: 1920px) {
+
+	#banner {
+		padding: 12em 0 25em 0;
+		margin-bottom: -6.5em;
+	}
+
+}
+
 @media screen and (max-width: 980px) {
 
 	#banner {
-		padding: 3em 3em 12.375em 3em;
+		padding: 5em 3em 12.375em 3em;
 		margin-bottom: -4.75em;
 	}
 
