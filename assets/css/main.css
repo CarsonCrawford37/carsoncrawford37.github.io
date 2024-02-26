@@ -3517,6 +3517,13 @@ body.is-menu-visible #menu .inner {
 
 #banner {
 	padding: 10em 0 4.75em 0;
+	background-color: #2e3141;
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.3), rgba(46, 49, 65, .9)), url("../../images/Butterfly\'s\ Perch.png");
+		/* replace with picture of me */
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 }
 
 #banner .inner {
@@ -3603,13 +3610,6 @@ body.is-menu-visible #menu .inner {
 
 	#banner {
 		padding: 20em 0 25em 0;
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.3), rgba(46, 49, 65, .9)), url("../../images/Butterfly\'s\ Perch.png");
-		/* replace with picture of me */
-		background-attachment: fixed;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
 		margin-bottom: -6.5em;
 	}
 
