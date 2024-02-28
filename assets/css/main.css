@@ -3725,7 +3725,7 @@ body.is-preload #banner p {
 
 #wrapper>header#vrcover{
 	background-color: #2e3141;
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/XRCover2.png");
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/XR/XRCover2.png");
 	
 }
 
@@ -3747,7 +3747,7 @@ body.is-preload #banner p {
 	font-weight: 200;
 	letter-spacing: 0.1em;
 	line-height: 2;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 @media screen and (max-width: 4096px) {
@@ -3764,7 +3764,7 @@ body.is-preload #banner p {
 	section#wrapper>header#xrcover {
 		padding: 9em 0 6.25em 0;
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/XRCover2.png);
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/XR/XRCover2.png);
 		background-size: auto, cover;
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
@@ -3773,7 +3773,7 @@ body.is-preload #banner p {
 	section#wrapper>header#gamecover {
 		padding: 9em 0 6.25em 0;
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/GameDesignCover2.png);
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/GameDesign/GameDesignCover2.png);
 		background-size: auto, cover;
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
