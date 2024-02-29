@@ -3725,13 +3725,17 @@ body.is-preload #banner p {
 
 #wrapper>header#vrcover{
 	background-color: #2e3141;
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/XR/XRCover2.png");
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/XR/ProfileXRBackground.gif");
 	
 }
 
 #wrapper>header .inner {
 	margin: 0 auto;
 	width: 55em;
+	background-color: #2e3141;
+	padding: 2%;
+	border: 0px;
+	border-radius: 2em;
 }
 
 #wrapper>header h2 {
@@ -3764,11 +3768,12 @@ body.is-preload #banner p {
 	section#wrapper>header#xrcover {
 		padding: 9em 0 6.25em 0;
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/XR/XRCover2.png);
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/XR/ProfileXRBackground.gif);
 		background-size: auto, cover;
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
 	}
+	
 
 	section#wrapper>header#gamecover {
 		padding: 9em 0 6.25em 0;
@@ -3815,6 +3820,8 @@ body.is-preload #banner p {
 	}
 
 }
+
+
 
 .wrapper {
 	background-color: #2e3141;
