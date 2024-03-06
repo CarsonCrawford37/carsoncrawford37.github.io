@@ -3162,6 +3162,25 @@ button:disabled,
 	width: calc(100% + 3.5em);
 }
 
+.original-image
+ {
+	position:absolute;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.hover-image{
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+
+.features a:hover .original-image {
+	opacity: 0;
+}
+
+.features a:hover .hover-image {
+	opacity: 1;
+}
+
 .features article .image img {
 	border-radius: 5px 5px 0 0;
 	width: 100%;
@@ -3518,12 +3537,12 @@ body.is-menu-visible #menu .inner {
 #banner {
 	padding: 10em 0 4.75em 0;
 	background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.3), rgba(46, 49, 65, .9)), url("../../images/Butterfly\'s\ Perch.png");
-		/* replace with picture of me */
-		background-attachment: fixed;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.3), rgba(46, 49, 65, .9)), url("../../images/Butterfly\'s\ Perch.png");
+	/* replace with picture of me */
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 #banner .inner {
@@ -3531,9 +3550,7 @@ body.is-menu-visible #menu .inner {
 	width: 55em;
 }
 
-#banner .image{
-
-}
+#banner .image {}
 
 #banner .logo {
 	-moz-transition: opacity 2s ease, -moz-transform 1s ease;
@@ -3610,7 +3627,7 @@ body.is-menu-visible #menu .inner {
 	/* text-transform: uppercase; */
 }
 
-#banner .button{
+#banner a.button {
 	-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 	-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
 	-ms-transition: opacity 2s ease, -ms-transform 1s ease;
@@ -3723,10 +3740,10 @@ body.is-preload #banner p {
 	padding: 11em 0 2.25em 0;
 }
 
-#wrapper>header#vrcover{
+#wrapper>header#vrcover {
 	background-color: #2e3141;
 	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/XR/ProfileXRBackground.gif");
-	
+
 }
 
 #wrapper>header .inner {
@@ -3756,14 +3773,14 @@ body.is-preload #banner p {
 
 @media screen and (max-width: 4096px) {
 
-	  #wrapper>header {
+	#wrapper>header {
 		padding: 9em 0 6.25em 0;
 		background-size: auto,
-		cover;
-	background-position: center,
-		0% 30%;
+			cover;
+		background-position: center,
+			0% 30%;
 		margin-bottom: -6.5em;
-	}  
+	}
 
 	section#wrapper>header#xrcover {
 		padding: 9em 0 6.25em 0;
@@ -3773,7 +3790,7 @@ body.is-preload #banner p {
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
 	}
-	
+
 
 	section#wrapper>header#gamecover {
 		padding: 9em 0 6.25em 0;
