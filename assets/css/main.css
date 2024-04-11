@@ -3675,7 +3675,7 @@ body.is-menu-visible #menu .inner {
 
 }
 
-@media screen and (max-width: 360p) {
+@media screen and (max-width: 360px) {
 
 	#banner {
 		padding: 1em 2em 4.25em 2em;
