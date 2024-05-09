@@ -373,7 +373,7 @@ h6 {
 	font-family: Raleway, Helvetica, sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.1em;
-	margin: 0 0 1em 0;
+	/* margin: 0 0 1em 0; */
 	text-transform: uppercase;
 }
 
@@ -2943,9 +2943,9 @@ table td {
 }
 
 table th {
-	color: #ffffff;
+	/* color: #ffffff;
 	font-size: 0.9em;
-	font-weight: 600;
+	font-weight: 600; */
 	padding: 0 0.75em 0.75em 0.75em;
 	text-align: left;
 }
@@ -3754,10 +3754,11 @@ body.is-preload #banner p {
 }
 
 #wrapper>header h2 {
-	border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+	/* border-bottom: solid 2px rgba(255, 255, 255, 0.125); */
 	font-size: 2em;
-	margin-bottom: 0.8em;
-	padding-bottom: 0.4em;
+	text-align: center;
+	/* margin-bottom: 0.8em;
+	padding-bottom: 0.4em; */
 }
 
 #wrapper>header h3 {
