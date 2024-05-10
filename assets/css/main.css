@@ -3812,6 +3812,15 @@ body.is-preload #banner p {
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
 	}
+	section#wrapper>header#getMilky {
+		padding: 9em 0 6.25em 0;
+		background-color: #2e3141;
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/GameDesign/GameDesignCover2.png);
+		background-size: auto, cover;
+		background-position: center, 0% 30%;
+		margin-bottom: -6.5em;
+	}
+
 }
 
 @media screen and (max-width: 980px) {
