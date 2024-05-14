@@ -93,7 +93,7 @@ video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	/* vertical-align: baseline; */
 }
 
 article,
@@ -2557,10 +2557,10 @@ input[type="radio"]+label:before {
 	display: block;
 }
 
-.image.left,
+/* .image.left,
 .image.right {
 	max-width: 30%;
-}
+} */
 
 .image.left img,
 .image.right img {
@@ -2928,7 +2928,7 @@ table {
 	width: 100%;
 }
 
-table tbody tr {
+/* table tbody tr {
 	border: solid 1px rgba(255, 255, 255, 0.125);
 	border-left: 0;
 	border-right: 0;
@@ -2936,7 +2936,7 @@ table tbody tr {
 
 table tbody tr:nth-child(2n + 1) {
 	background-color: rgba(255, 255, 255, 0.025);
-}
+} */
 
 table td {
 	padding: 0.75em 0.75em;
@@ -2950,23 +2950,23 @@ table th {
 	text-align: left;
 }
 
-table thead {
+/* table thead {
 	border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
 
 table tfoot {
 	border-top: solid 2px rgba(255, 255, 255, 0.125);
-}
+} */
 
 table.alt {
 	border-collapse: separate;
 }
 
-table.alt tbody tr td {
+/* table.alt tbody tr td {
 	border: solid 1px rgba(255, 255, 255, 0.125);
 	border-left-width: 0;
 	border-top-width: 0;
-}
+} */
 
 table.alt tbody tr td:first-child {
 	border-left-width: 1px;
@@ -3182,14 +3182,16 @@ button:disabled,
 	/* width: calc(50% - 1.5em); */
 }
 
-.otherProjects h3, .otherProjects p, .otherProjects a.special{
+.otherProjects h3,
+.otherProjects p,
+.otherProjects a.special {
 	padding: 1.75em 1.75em 0.1em 1.75em;
 }
 
 .center {
 	display: block;
-	
-  }
+
+}
 
 .otherProjects article:nth-child(2n) {
 	margin-right: 0;
@@ -3207,13 +3209,12 @@ button:disabled,
 	/* width: calc(100% + 3.5em); */
 }
 
-.original-image
- {
-	position:absolute;
+.original-image {
+	position: absolute;
 	transition: opacity 0.3s ease-in-out;
 }
 
-.hover-image{
+.hover-image {
 	opacity: 0;
 	transition: opacity .5s ease-in-out;
 }
@@ -3250,6 +3251,7 @@ button:disabled,
 		margin: 1em 2em 1em 0;
 		width: calc(50% - 1em);
 	}
+
 	.otherProjects article {
 		margin: 1em 2em 1em 0;
 		width: calc(50% - 1em);
@@ -3844,7 +3846,7 @@ body.is-preload #banner p {
 }
 
 #wrapper>header h3 {
-	text-transform:none;
+	text-transform: none;
 	font-weight: 500;
 }
 
@@ -3876,6 +3878,7 @@ body.is-preload #banner p {
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
 	}
+
 	section#wrapper>header#alzheimers {
 		padding: 9em 0 6.25em 0;
 		background-color: #2e3141;
@@ -3889,15 +3892,16 @@ body.is-preload #banner p {
 	section#wrapper>header#gamecover {
 		padding: 9em 0 6.25em 0;
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/GameDesign/GameDesignCover2.png);
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/GameDesign/GetMilky/Get\ Milky.gif);
 		background-size: auto, cover;
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
 	}
+
 	section#wrapper>header#getMilky {
 		padding: 9em 0 6.25em 0;
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/GameDesign/GameDesignCover2.png);
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../../images/GameDesign/GetMilky/GameDesignCover.png);
 		background-size: auto, cover;
 		background-position: center, 0% 30%;
 		margin-bottom: -6.5em;
@@ -4489,84 +4493,98 @@ body.is-preload #banner p {
 
 }
 
-.skill1{
+.skill1 {
 	background-color: #4c5c96;
-    box-shadow: none;
+	box-shadow: none;
 	border-radius: 5px;
-    border: 0;
+	border: 0;
 	color: #ffffff;
 	display: inline-block;
 	height: 3.75em;
-    line-height: 3.75em;
-    padding: 0 2.25em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
+	line-height: 3.75em;
+	padding: 0 2.25em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
-.skill2{
-	background-color:#324072;
-    box-shadow: none;
+.skill2 {
+	background-color: #324072;
+	box-shadow: none;
 	border-radius: 5px;
-    border: 0;
+	border: 0;
 	color: #ffffff;
 	display: inline-block;
 	height: 3.75em;
-    line-height: 3.75em;
-    padding: 0 2.25em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
+	line-height: 3.75em;
+	padding: 0 2.25em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
-.skill3{
-	background-color:#2f4592;
-    box-shadow: none;
+.skill3 {
+	background-color: #2f4592;
+	box-shadow: none;
 	border-radius: 5px;
-    border: 0;
+	border: 0;
 	color: #ffffff;
 	display: inline-block;
 	height: 3.75em;
-    line-height: 3.75em;
-    padding: 0 2.25em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
+	line-height: 3.75em;
+	padding: 0 2.25em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
-.skill4{
-	background-color:#39477c;
-    box-shadow: none;
+.skill4 {
+	background-color: #39477c;
+	box-shadow: none;
 	border-radius: 5px;
-    border: 0;
+	border: 0;
 	color: #ffffff;
 	display: inline-block;
 	height: 3.75em;
-    line-height: 3.75em;
-    padding: 0 2.25em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
+	line-height: 3.75em;
+	padding: 0 2.25em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
 }
 
-.iframe-container{
+.iframe-container {
 	position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  margin-bottom: 3em;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+	/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	margin-bottom: 3em;
 }
 
-.responseive-iframe{
+.responseive-iframe {
 	position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 }
+
+#contributions img {
+	/* vertical-align:text-top; */
+	/* height: auto; */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+/* #contributions td{
+	width: 50%;
+} */

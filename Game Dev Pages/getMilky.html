@@ -10,6 +10,7 @@
 	<title>Carson Crawford | Get Milky</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -80,8 +81,12 @@
 							into our game.
 						</p>
 					</section>
-
-					<section>
+					<div class="iframe-container">
+						<iframe class="responseive-iframe" src="https://youtube.com/embed/jNAiKW3d69g"
+							alt="YouTube video of the demo">
+						</iframe>
+					</div>
+					<section id="contributions">
 						<h3>My Contributions</h3>
 						<p>I worked as the main functionality programmer, developing all the game mechanics such as
 							intuitive <b>movement controls</b>, <b>AI state machines</b>, <b>round systems</b>, and
@@ -89,77 +94,84 @@
 							isometric view and hide-and-seek aspect.<br>
 						<table>
 							<tr>
-								<span class="image left"><img src="../images/pic01.jpg" alt="demo of the the tutorial"
-										alt="" /></span>
-								<p>
-									<b>Movement -</b><br>
-									Movement is everything in games. In this project, we wanted a very specific feel to
-									how
-									the players run around the pen, almost like a slippery feel for increased chaotic
-									gameplay. For this, I used the player’s rigid body and added force when they moved,
-									simulating the sliding feel. With multi-controller compatibility in mind (including
-									the
-									custom Arduino controller), I used Unity’s input manager to gather any input and
-									register it as movement.
-								</p>
+								<td>
+									<img src="../images/GameDesign/GetMilky/movement.gif" alt="" />
+								</td>
+								<td>
+									<p>
+										<b>Movement -</b><br>
+										Movement is everything in games. In this project, we wanted a very specific feel
+										to
+										how
+										the players run around the pen, almost like a slippery feel for increased
+										chaotic
+										gameplay. For this, I used the player’s rigid body and added force when they
+										moved,
+										simulating the sliding feel. With multi-controller compatibility in mind
+										(including
+										the
+										custom Arduino controller), I used Unity’s input manager to gather any input and
+										register it as movement.
+									</p>
+								</td>
 							</tr>
 							<tr>
-								<span class="image right"><img src="../images/pic02.jpg" alt="" /></span>
-								<p>
-									<b>AI -</b><br>
-									As a key feature, the AI acts as a moving barrier for the players, creating a more
-									engaging gameplay. For this, I used navmesh agents and a simple state machine to
-									bring
-									them to life. The state machine only had two states (sleeping and working) however,
-									it
-									was equipped for many more actions. This just had the AI walk to a random point,
-									stop
-									for a random amount of time, and then walk to another random point to start over. We
-									also wanted to randomly spawn the cows inside the pen, so I created a min and max
-									bounds
-									to keep them within the pen and then spawned them individually.
-								</p>
+								<td>
+									<p>
+										<b>AI -</b><br>
+										As a key feature, the AI acts as a moving barrier for the players, creating a
+										more
+										engaging gameplay. For this, I used navmesh agents and a simple state machine to
+										bring
+										them to life. The state machine only had two states (sleeping and working)
+										however,
+										it
+										was equipped for many more actions. This just had the AI walk to a random point,
+										stop
+										for a random amount of time, and then walk to another random point to start
+										over. We
+										also wanted to randomly spawn the cows inside the pen, so I created a min and
+										max
+										bounds
+										to keep them within the pen and then spawned them individually.
+									</p>
+								</td>
+								<td>
+									<img src="../images/GameDesign/GetMilky/ai.gif" alt="" />
+								</td>
 							</tr>
 							<tr>
-								<span class="image left"><img src="../images/pic03.jpg" alt="demo of the the tutorial"
-										alt="" /></span>
-								<p>
-									<b>Round System</b><br>
-									This was the main meat of the game that determined the win conditioning. I
-									programmed this
-									system so that if the timer ends before the cowboy catches the cow, then the cow
-									wins, and
-									vice versa.
-								</p>
+								<td>
+									<img src="../images/GameDesign/GetMilky/rounds.gif" alt="demo of the the tutorial" alt="" />
+								</td>
+								<td>
+									<p>
+										<b>Round System</b><br>
+										This was the main meat of the game that determined the win conditioning. I
+										programmed this
+										system so that if the timer ends before the cowboy catches the cow, then the cow
+										wins, and
+										vice versa.
+									</p>
+								</td>
 							</tr>
 							<tr>
-								<span class="image right"><img src="../images/pic04.jpg" alt="demo of the the tutorial"
-										alt="" /></span>
-								<p><b>Multiplayer</b><br>
-									I used Unity’s Simple Multiplayer package to allow multiple players to join via the
-									same
-									machine. I also designed an auto-player prefab assignment script where it will
-									automatically
-									give the player a role based on when they join.
-								</p>
-
+								<td>
+									<p><b>Multiplayer</b><br>
+										I used Unity’s Simple Multiplayer package to allow multiple players to join via
+										the
+										same
+										machine. I also designed an auto-player prefab assignment script where it will
+										automatically
+										give the player a role based on when they join.
+									</p>
+								</td>
+								<td>
+									<img style="width: 100%;" src="../images/GameDesign/GetMilky/multiplayer.png" alt="demo of the the tutorial" alt="" />
+								</td>
 							</tr>
 						</table>
 					</section>
-					<!-- <p>Alzheimer's is a very difficult disease to catch early on, due to how similar they are to the symptoms of normal aging. However, recent studies have identified a correlation between a diminishing sense of smell and Alzheimer's. In response to this need for early detection tools, a Vertically Integrated Project (VIP) class at Boise State University took on the challenge. Leveraging the immersive nature of virtual reality technology and a custom-built scent device, <a href="https://www.boisestate.edu/vip/brain-health-vr-scent/" target="empty"><b>BrainHealthVR</b></a> designed a cost-effective testing simulation to aid in the pre-diagnosis of this degenerative disease that regular doctors can use with ease.</p> -->
-					<!-- <div class="iframe-container">
-							<iframe class="responseive-iframe" src="https://youtube.com/embed/X4CC72zwIrY"
-								alt="YouTube video of the demo">
-							</iframe>
-						</div> -->
-
-
-					<!-- <section>
-						<p><span class="image left"><img src="../images/XR/Alzheimers/AlzheimersTut.gif"
-							alt="demo of the the tutorial" alt="" /></span>As a summer intern, I collaborated with a team of three to finalize the simulation for presentation to a partner company. This company had agreed to conduct initial tests of the program with their patients. My responsibility included ensuring the simulation was thoroughly prepared and ready for testing. This involved enhancing user interactions, optimizing communication between the scent device and the program, and coordinating	closely with the engineering team and client to deliver a polished product.</p>
-						<p><span class="image right"><img src="../images/XR/Alzheimers/alzcover.png"
-							alt="" /></span>One of my key responsibilities for ensuring smooth user interaction was to develop a tutorial specifically designed for individuals who may be unfamiliar with VR technology, mitigating the risk of unintended consequences such as cybersickness. This approach not only minimized the need for verbal instruction, which could exacerbate confusion but also significantly enhanced accessibility to the simulation, ultimately resulting in a more	inclusive and user-friendly experience for all participants.</p>
-					</section> -->
 				</div>
 			</div>
 		</section>
